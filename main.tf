@@ -1,3 +1,3 @@
-resource "random_id" "server" {
-  byte_length = var.length
+resource "tls_private_key" "private_key" {
+  algorithm   = var.algorithm
 }
